@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5dc; /* Beige suave */
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background: #003366; /* Azul oscuro */
+    color: white;
+    padding: 20px 40px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.title h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.title p {
+    font-size: 16px;
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+/* BANNER */
+#banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background: linear-gradient(to right, #ffffff, #f0f0f0);
+    padding: 50px;
+}
+
+.image {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text {
+    flex: 1;
+    text-align: left;
+    color: #003366; /* Azul oscuro */
+    margin-left: 60px;
+}
+
+.text h2 {
+    font-size: 38px;
+    font-weight: bold;
+    color: #003366; /* Azul oscuro */
+    margin-bottom: 15px;
+}
+
+.text p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn.primary {
+    background: #ffcc00; /* Amarelo */
+    color: #003366; /* Azul escuro */
+}
+
+.btn.primary:hover {
+    background: #e6b800; /* Amarelo mais escuro */
+    transform: scale(1.05);
+}
+
+.btn.secondary {
+    background: #003366;
+    color: #ffcc00; 
+    /* border: 2px solid #ffcc00;  */
+}
+
+.btn.secondary:hover {
+    background:#002147; 
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    background: #003366; /* Azul escuro */
+    color: white;
+    padding: 25px;
+    font-size: 16px;
+    margin-top: 40px;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+}
+
+#informacao {
+    background: #e6e6e6; /* Tom neutro */
+    padding: 60px 0;
+}
+
+#informacao .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    gap: 50px;
+}
+
+#informacao .text {
+    flex: 1;
+    text-align: left;
+    color: #003366; /* Azul escuro */
+}
+
+#informacao .text h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #002147; /* Azul escuro */
+}
+
+#informacao .text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#informacao .image {
+    width: 350px;
+    height: 350px;
+    background: url('images/sobre-nos.png') no-repeat center;
+    background-size: cover;
+    clip-path: circle(50%);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* MENU */
+#menu {
+    background: white; 
+    padding: 60px 0;
+    text-align: center;
+}
+
+#menu h2 {
+    font-size: 40px;
+    color: #003366; /* Azul escuro */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.produtos {
+    display: flex;
+    justify-content: center; 
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Estilos de los cards */
+.produto {
+    width: 320px;
+    background: linear-gradient(to right, #f0f0f0, #d9d9d9); /* Fondo similar a la sección "Sobre Nós" */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.produto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.produto h3 {
+    font-size: 22px;
+    color: #003366; /* Azul escuro */
+    margin-bottom: 10px;
+}
+
+.produto p {
+    font-size: 16px;
+    color: #4e342e;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.produto .btn {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    background: #003366; 
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.produto .btn:hover {
+    background: #002147; 
+}
+
+
+
+#contato {
+    background: linear-gradient(to right, #ffffff, #f0f0f0);
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+}
+
+#contato h2 {
+    font-size: 32px;
+    color: #003366; /* Azul escuro */
+    margin-bottom: 20px;
+}
+
+/* Estilización del formulario */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #003366; /* Puedes cambiar este color si lo deseas */
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease; /* Efecto de transición */
+}
+
+input:focus, textarea:focus {
+    border-color: #ffcc00; /* Cambiar color al enfocar a amarillo */
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* Botón de envío */
+.btn-enviar {
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background: #ffcc00; /* Amarelo */
+    color: #003366;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease; /* Añadir efecto de transformación */
+}
+
+.btn-enviar:hover {
+    background: #e6b800; /* Amarelo mais escuro */
+    transform: scale(1.05); /* Efecto de hover más pronunciado */
+}
+
+/* Información de contacto */
+.info-contato {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #003366; /* Azul escuro para la información de contacto */
+}
+
+/* RESPONSIVIDAD */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #informacao .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #informacao .image {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    #banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .produtos {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    .title h1 {
+        font-size: 24px;
+    }
+
+    .text h2 {
+        font-size: 28px;
+    }
+
+    .text p {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    #menu h2 {
+        font-size: 32px;
+    }
+
+    .produto {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .title h1 {
+        font-size: 20px;
+    }
+
+    .title p {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .produtos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produto {
+        width: 90%;
+    }
+
+    #menu h2 {
+        font-size: 28px;
+    }
+
+    form {
+        max-width: 90%;
+    }
+}

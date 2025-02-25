@@ -1,0 +1,30 @@
+<svg
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 500 500"
+    width="500" height="500"
+>
+    <!-- Fundo -->
+    <rect width="100%" height="100%" fill="white" />
+
+    <!-- Xícara de café -->
+    <path d="M150 350 Q100 300 150 250 L350 250 Q400 300 350 350 Z" fill="#6B4E3D" stroke="#3E2A20" stroke-width="5"/>
+    <circle cx="250" cy="280" r="60" fill="#8B5A2B" stroke="#5A3D1E" stroke-width="5" />
+
+    <!-- Alça da xícara -->
+    <path d="M350 260 Q420 230 420 300 Q420 370 350 350" fill="none" stroke="#3E2A20" stroke-width="8" />
+    
+    <!-- Coruja integrada -->
+    <circle cx="200" cy="150" r="50" fill="#FFD700" stroke="#DAA520" stroke-width="5"/>
+    <circle cx="300" cy="150" r="50" fill="#FFD700" stroke="#DAA520" stroke-width="5"/>
+    
+    <!-- Olhos -->
+    <circle cx="200" cy="150" r="20" fill="#000"/>
+    <circle cx="300" cy="150" r="20" fill="#000"/>
+    
+    <!-- Bico -->
+    <polygon points="240,180 260,180 250,200" fill="#DAA520"/>
+
+    <!-- Texto -->
+    <text x="50%" y="440" font-family="Arial, sans-serif" font-size="50" fill="#3E2A20" text-anchor="middle" font-weight="bold">B3 Coffee Hub</text>
+</svg>
