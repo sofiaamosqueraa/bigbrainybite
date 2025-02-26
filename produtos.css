@@ -145,14 +145,14 @@ header {
 
 /* RESPONSIVO */
 @media (max-width: 900px) {
-    .produto-content {
-        flex-direction: column;
-        text-align: center;
+    header {
+        padding: 5px; /* Reduz o padding do cabeçalho */
+        font-size: 20px; /* Reduz o tamanho da fonte do cabeçalho */
     }
 
     .produto-imagem {
-        width: 320px;
-        height: 320px;
+        width: 100%; /* Ajusta a largura da imagem para 100% */
+        height: auto; /* Mantém a proporção da imagem */
     }
 
     .produto-info {
@@ -160,6 +160,20 @@ header {
     }
 
     .produto-info h2 {
+        font-size: 22px; /* Reduz o tamanho da fonte do título */
         text-align: center;
+    }
+
+    .produto-info p {
+        font-size: 16px; /* Reduz o tamanho da fonte do parágrafo */
+    }
+
+    .produto-info ul li {
+        font-size: 16px; /* Reduz o tamanho da fonte da lista */
+    }
+
+    .btn {
+        font-size: 16px; /* Reduz o tamanho do botão */
+        padding: 10px 15px; /* Ajusta o padding do botão */
     }
 }
